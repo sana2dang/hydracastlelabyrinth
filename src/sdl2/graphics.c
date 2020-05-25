@@ -29,7 +29,10 @@ int screenH = 480;
 int actualW = 640;
 int actualH = 480;
 
+
 int drawscreen = 0;
+
+
 
 int xbrz = 0;
 
@@ -139,7 +142,6 @@ void PHL_EndDrawing()
 	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL_RenderClear(renderer);
 
-	//SDL_Rect rect = {deltaX, deltaY, actualW, actualH};
 	SDL_Rect rect = {0, 0, 480, 320};
 	SDL_RenderCopy(renderer, screen, NULL, &rect);
 
